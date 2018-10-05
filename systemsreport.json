@@ -1,0 +1,10 @@
+{
+    "homepage": "https://github.com/hannesdorn/scoop-dorn",
+    "version": "0.1",
+    "license": "https://www.gnu.org/licenses/gpl.html",
+    "url": "https://github.com/hannesdorn/scoop-dorn/SystemsReport.zip",
+    "bin": "systemsreport.cmd",
+    "autoupdate": {
+        "url": "https://github.com/hannesdorn/scoop-dorn/SystemsReport.zip"
+    }
+}
