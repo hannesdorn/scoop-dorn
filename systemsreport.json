@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/hannesdorn/scoop-dorn",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "license": "https://www.gnu.org/licenses/gpl.html",
     "url": "https://raw.githubusercontent.com/hannesdorn/SystemsReport/master/SystemsReport.zip",
     "bin": "systemsreport.cmd",
     "persist": [
-        "config",
+        ["config-sample.ps1", "config.ps1"],
         "reports"
     ],
     "autoupdate": {
