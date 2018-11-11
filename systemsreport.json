@@ -1,11 +1,18 @@
 {
     "homepage": "https://github.com/hannesdorn/scoop-dorn",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "license": "https://www.gnu.org/licenses/gpl.html",
     "url": "https://raw.githubusercontent.com/hannesdorn/SystemsReport/master/SystemsReport.zip",
     "bin": "systemsreport.cmd",
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$dir\\config.ps1\")) {",
+            "   Copy-Item \"$dir\\config-sample.ps1\" \"$dir\\config.ps1\"",
+            "}"
+        ]
+    },
     "persist": [
-        ["config-sample.ps1", "config.ps1"],
+        "config.ps1",
         "reports"
     ],
     "autoupdate": {
