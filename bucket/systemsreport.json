@@ -10,7 +10,12 @@
         "script": [
             "if (!(Test-Path \"$dir\\config\\config.ps1\")) {",
             "   Copy-Item \"$dir\\config\\config-sample.ps1\" \"$dir\\config\\config.ps1\"",
-            "}"
+            "}",
+            "Set-Content -Path \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"@echo off\" -Force",
+            "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"%~d0\"",
+            "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"cd \"\"%~p0\"\"\"",
+            "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"call ..\\..\\shims\\scoop.cmd update\"",
+            "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"call ..\\..\\shims\\scoop.cmd update SystemsReport\""
         ]
     },
     "persist": [
