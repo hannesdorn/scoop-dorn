@@ -3,7 +3,7 @@
     "description": "Windows systemsreport generator",
     "version": "0.3.0",
     "license": "https://www.gnu.org/licenses/gpl.html",
-    "url": "https://github.com/hannesdorn/SystemsReport/releases/download/v0.3.0/SystemsReport-v0.3.0.zip"
+    "url": "https://github.com/hannesdorn/SystemsReport/releases/download/v0.3.0/SystemsReport-v0.3.0.zip",
     "bin": "systemsreport.cmd",
     "installer": {
         "script": [
