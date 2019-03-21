@@ -1,21 +1,25 @@
 {
-    "homepage": "https://github.com/hannesdorn/scoop-dorn",
-    "version": "0.2.18",
+    "homepage": "https://github.com/hannesdorn/SystemsReport",
+    "description": "Windows systemsreport generator",
+    "version": "0.3.0",
     "license": "https://www.gnu.org/licenses/gpl.html",
-    "url": "https://raw.githubusercontent.com/hannesdorn/SystemsReport/master/SystemsReport.zip",
+    "url": "https://github.com/hannesdorn/SystemsReport/releases/download/v0.3.0/SystemsReport-v0.3.0.zip"
     "bin": "systemsreport.cmd",
     "installer": {
         "script": [
-            "if (!(Test-Path \"$dir\\config.ps1\")) {",
-            "   Copy-Item \"$dir\\config-sample.ps1\" \"$dir\\config.ps1\"",
+            "if (!(Test-Path \"$dir\\config\\config.ps1\")) {",
+            "   Copy-Item \"$dir\\config\\config-sample.ps1\" \"$dir\\config\\config.ps1\"",
             "}"
         ]
     },
     "persist": [
-        "config.ps1",
+        "config",
         "reports"
     ],
+    "checkver": {
+        "github": "https://github.com/hannesdorn/SystemsReport/"
+    },
     "autoupdate": {
-        "url": "https://raw.githubusercontent.com/hannesdorn/SystemsReport/master/SystemsReport.zip"
+        "url": "https://github.com/hannesdorn/SystemsReport/releases/download/v$version/SystemsReport-v$version.zip"
     }
 }
