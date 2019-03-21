@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/hannesdorn/SystemsReport",
     "description": "Windows systemsreport generator",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "license": "https://www.gnu.org/licenses/gpl.html",
-    "url": "https://github.com/hannesdorn/SystemsReport/releases/download/v0.3.1/SystemsReport-v0.3.1.zip",
-    "hash": "17b09b7de6bb2129e43727d33a11e145cbe208a6a4c23f61c436d51c103db727",
+    "url": "https://github.com/hannesdorn/SystemsReport/releases/download/v0.3.2/SystemsReport-v0.3.2.zip",
+    "hash": "f85e9c8bc515c12d460389cc4bfaf9807bc946e182b92414dd97b54f450d8bb7",
     "bin": "systemsreport.cmd",
     "installer": {
         "script": [
