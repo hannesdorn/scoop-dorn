@@ -15,7 +15,7 @@
             "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"echo %date% %time%\"",
             "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"%~d0\"",
             "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"cd \"\"%~p0\"\"\"",
-            "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"call ..\\..\\shims\\scoop.cmd update\"",
+            "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"call ..\\..\\shims\\scoop.cmd update\""
             "Add-Content \"$dir\\..\\..\\..\\persist\\systemsreport\\update.cmd\" -Value \"call ..\\..\\shims\\scoop.cmd update SystemsReport\""
         ]
     },
